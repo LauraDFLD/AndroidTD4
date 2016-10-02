@@ -10,7 +10,7 @@ import android.support.v4.app.FragmentStatePagerAdapter;
 
 public class ExamplePagerAdapter extends FragmentStatePagerAdapter {
 
-    public ExamplePagerAdapter(FragmentManager fm)
+    public ExamplePagerAdapter(FragmentManager fm) // constructeur
     {
         super(fm);
     }
@@ -20,13 +20,13 @@ public class ExamplePagerAdapter extends FragmentStatePagerAdapter {
     {
         Fragment fragment =  null;
 
-        switch (position)
+        switch (position) // change de classe en fonction de l'onglet
         {
             case 0:
-                fragment = new TextFragment();
+                fragment = new TextFragment(); // onglet texte
                 break;
             case 1:
-                fragment = new NumberPickerFragment();
+                fragment = new NumberPickerFragment(); // onglet numberpicker
                 break;
             default:
                 fragment = new TextFragment();
@@ -39,7 +39,7 @@ public class ExamplePagerAdapter extends FragmentStatePagerAdapter {
     @Override
     public int getCount()
     {
-        //le nombre d’onglet
+        // compte le nombre d’onglet
         return 2;
     }
 
