@@ -75,6 +75,6 @@ public class MainActivity extends AppCompatActivity implements ActionBar.TabList
     public void onAction(int myNumber) {
         //faire ce qu’il faut faire avec d...
         mData=myNumber; // récupère le numberpicker
-        ((TextFragment)mExamplePagerAdapter.getItem(1)).changeTextNumber(mData); // change le texte par le numberpicker
+        ((TextFragment)mExamplePagerAdapter.getItem(0)).changeTextNumber(mData); // change le texte par le numberpicker
     }
 }

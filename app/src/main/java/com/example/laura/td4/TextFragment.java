@@ -26,7 +26,7 @@ public class TextFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         // Inflate the layout for this fragment
-        View viewFragment = inflater.inflate(R.layout.fragment_text, container, false);
+        viewFragment = inflater.inflate(R.layout.fragment_text, container, false);
 
         return viewFragment;
     }
